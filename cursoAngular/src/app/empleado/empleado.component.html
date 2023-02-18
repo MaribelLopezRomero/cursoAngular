@@ -1,0 +1,27 @@
+<p>Nombre: {{ nombre }}</p>
+<p>Nombre: {{ apellido }}</p>
+<p>Nombre: {{ getEdad() < 18 ? "menor de edad" : "mayor de edad" }}</p>
+<p>Nombre: {{ empresa }}</p>
+
+Nombre de la empresa
+<!-- <input type="text" #empresaInput (keyup)="(0)" [disabled]="disabledProperty" /> -->
+<!-- 
+<input type="text" [(ngModel)]="empresa" (input)="cambiarEmpresa($event)"/> -->
+<input type="text" [(ngModel)]="empresa" />
+
+<br />
+<p>{{ infoUsuario }}</p>
+<br />
+Ususario registrado
+<input
+  type="checkbox"
+  [checked]="checkedProperty"
+  (click)="handleUsuarioRegistrado($event)"
+/>
+<!-- 
+llamar a la funcion que modifica la propiedad checked -->
+
+{{ usuarioRegistrado() }}
+<br />
+
+<!-- <input type="button" value="dale" (click)="nombreEmpresa(empresaInput.value)" /> //# variable de plantilla que identifica el objeto input -->
