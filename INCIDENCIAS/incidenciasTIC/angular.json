@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "cursoAngular": {
+    "incidenciasTIC": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/curso-angular",
+            "outputPath": "dist/incidencias-tic",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -29,9 +29,9 @@
               "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": [
-              "node_modules/bootstrap/dist/js/bootstrap.min.js",
-              "node_modules/jquery/dist/jquery.slim.min.js"
-              
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            
+
             ]
           },
           "configurations": {
@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "cursoAngular:build:production"
+              "browserTarget": "incidenciasTIC:build:production"
             },
             "development": {
-              "browserTarget": "cursoAngular:build:development"
+              "browserTarget": "incidenciasTIC:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "cursoAngular:build"
+            "browserTarget": "incidenciasTIC:build"
           }
         },
         "test": {
@@ -101,6 +101,6 @@
     }
   },
   "cli": {
-    "analytics": "1e758ea1-7e00-4e0a-a83d-8c113e9720ce"
+    "analytics": "02f21702-01bf-487b-9698-9d93b6b83bee"
   }
 }
